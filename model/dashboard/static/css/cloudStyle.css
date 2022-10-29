@@ -1,0 +1,97 @@
+body {
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cloud {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: rgba(39, 39, 39, 0.83);
+    border: 3px solid #006278;
+    width: 24.11458333%;
+    height: 25vh;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 47px;
+    width: 100%;
+}
+
+.button {
+    background-color: #006278;
+    border: none;
+    color: #fff;
+    width: 20%;
+    height: 33px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #013a47;
+}
+
+.filemanager {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.25925926%;
+    width: 91.09375%;
+    height: 60vh;
+    background: rgba(39, 39, 39, 0.4);
+    border: 3px solid #006278;
+}
+
+#progress {
+    display: flex;
+    margin-top: 5%;
+    width: 200px;
+}
+
+.logoutButton {
+    position: absolute;
+    top:27%;
+    background-color: rgba(160, 38, 38, 0.5);
+    color: #fff;
+    width: 94px;
+    text-decoration: none;
+    border: none;
+    height: 33px;
+    font-weight: bold;
+}
+
+.logout {
+  margin-left: auto;
+  margin-right: auto;
+  width: 94px;
+}
+
+
+.logoutButton:hover {
+    background-color: rgb(125, 37, 37);
+}
+
+.sas {
+    transform: translate(13.5%, 0%);
+    width: 100%;
+}
+
+input {
+    width: 50%;
+}
+
+progress[value] {
+    width: 30%;
+    height: 10px;
+    margin-top: 20px;
+}
+
+progress::-moz-progress-bar { background: #006278; border-radius: 20px;}
+progress::-webkit-progress-value { background: #006278; border-radius: 20px;}
+progress::-webkit-progress-bar { border-radius: 20px;}
+progress { color:#006278; border-radius: 20px;}

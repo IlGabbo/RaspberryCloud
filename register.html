@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/png" href="https://media.giphy.com/media/CAYVZA5NRb529kKQUc/giphy.gif">
+    <style>
+
+    @font-face {
+        font-family: "Minecraftia";
+        src: url(Minecraftia-Regular.ttf);
+    }
+
+    html,body {
+        padding: 0;
+        margin: 0;
+        font: 14px 'Open sans', sans-serif;
+        color: #333;
+        background: url("https://media.giphy.com/media/CAYVZA5NRb529kKQUc/giphy.gif") center;
+        background-size: cover;
+        
+    }
+    h1 {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    form {
+        padding: 40px;
+        background: #DDD;
+        border: 4px solid #AAA;
+        width: 360px;
+        margin: 30px auto;
+    }
+    input {
+        font: 13px 'Open Sans', sans-serif;
+        border: 2px solid #ccc;
+        padding: 6px;
+        display: block;
+        margin-bottom: 10px;
+        width: 96%;
+    }
+    button {
+        font: 13px 'Open Sans', sans-serif;
+        background-color: #4285f4;
+        color: white;
+        padding: 6px;
+        cursor: pointer;
+        border: none;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+        position: absolute;
+        top: 19%;
+        left: 47%;
+    }
+
+    #show_password {
+        transform: translate(5250%, -727.5%)
+    }
+
+    .passwd {
+        display: flex;
+        
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <form method="POST" action="php/register.php">
+            <h1>Registrati</h1>
+            <input type="text" id="us" placeholder="Username" name="us" required>
+            <input type="password" id="ps" placeholder="Password" name="ps" required>
+                <button type="submit" name="login">Registrati</button>
+                <button id="btn" onclick="show()" type="button">Mostra password</button>
+        </form>
+        
+    </div>
+    <script type="text/javascript">
+        var check = true;
+        function show() {
+            if (check == true) {
+                document.getElementById('ps').type = 'text';
+                document.getElementById('btn').innerHTML = "Nascondi password";
+                check = false;
+            } else if (check == false) {
+                document.getElementById('ps').type = 'password';
+                document.getElementById('btn').innerHTML = "Mostra password";
+                check = true;
+            }
+        }
+    </script>
+</body>
+</html>
