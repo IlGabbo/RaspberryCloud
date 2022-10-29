@@ -1,5 +1,5 @@
 # Cloud
-<p>Mini cloud in PHP, alcune azioni vengono eseguite tramite <span style="color: green;">comandi di sistema</span></p>
+Mini cloud in PHP, alcune azioni vengono eseguite tramite comandi di sistema
 <br>Le password vengono criptate e salvate in un database SQL</br>
 
 <img src="https://github.com/IlGabbo/Cloud/blob/main/login.png">
