@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+}
+
+.cloud {
+    position: absolute;
+    width: 24%;
+    height: 25vh;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60vh;
+}
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 29vh;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.cloud::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 29vh;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sas {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background-color: #28292d;
+    z-index: 10;
+    padding: 13% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #45f3ff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 15%;
+    height: 3vh;
+    font-weight: 600;
+}
+
+.logoutButton {
+    font-weight: 600;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 94px;
+    height: 3vh;
+}
+
+.logoutButton:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.button:hover {
+    background-color: rgba(69, 243, 255, 0.7);
+}
+
+.logout {
+    width: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.filemanager {
+    margin-top: 290px;
+    height: 60vh;
+}
+
+#progress-bar {
+    border-radius: 20px;
+    height: 8px;
+}
+
+progress::-moz-progress-bar { background: #45f3ff; border-radius: 20px;}
+progress::-webkit-progress-value { background: #45f3ff; border-radius: 20px;}
+progress::-webkit-progress-bar { border-radius: 20px;}
+progress { color:#45f3ff; border-radius: 20px;}
