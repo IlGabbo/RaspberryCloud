@@ -9,14 +9,14 @@ length = 6
 
 code = "".join(random.sample(numbers, length))
 
-string = b'gAAAAABjEMiBV5FhJuh-y1moFVz1WzKtLkHc4UQRbQnHDYze6HmZQxo_qpFlP8UDTTqAbo49C_l93_gOoiiYOVGe1emqlFtNzqQNGv4gQXllN32hGfQb18k='
+string = b'' # Your gmail password
 k = b'UzM9mZCzCWUUt0zN27ZF5c6AYv3X41NxhHbc5rMskhA='
 f = Fernet(k)
 tok = f.decrypt(string).decode()
 
 
-FROM = "mancinigabriele685@gmail.com"
-TO = "f.mancini.gabriele@gmail.com"
+FROM = "" # Sender
+TO = "" # Receiver
 message = f"""
 Codice di verifica:
 {code}
@@ -24,7 +24,7 @@ Codice di verifica:
 """
 email = smtplib.SMTP("smtp.gmail.com", 587)
 email.starttls()
-email.login("mancinigabriele685@gmail.com", tok)
+email.login("Admin mail here", tok)
 email.sendmail(FROM, TO, message)
 email.quit()
 print("Sended")
